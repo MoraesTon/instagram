@@ -1,0 +1,151 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(243, 243, 243);
+}
+
+.insta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+
+}
+
+.insta-phone {
+    align-self: center;
+    background-image: url(/img/staticinsta.png);
+    background-size: 350px;
+    flex-basis: 320px;
+    height: 460px;
+    width: 100%;
+    margin-right: 10px;
+    position: relative;
+}
+
+.caroussel {
+    height: 335px;    
+    width: 191px;
+    position: absolute;
+    right: 16px;
+    top: 74px;
+    visibility: hidden;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fades {
+    -webkit-transition: opacity 1.5s ease-in;
+    transition: opacity 1.5s ease-in;
+    z-index: 2;
+}
+
+.insta-continue {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    width: 100%;
+    color: #262626;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+
+.insta-login {
+    display: flex;
+    align-items: center;
+    background: #0095f6;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0 20px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.insta-login img {
+    margin: 10px 0;
+}
+
+.profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+
+}
+
+.profile-pic img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.link-blue {
+    font-weight: 600;
+    color: #0095f6;
+    border: 0;
+    cursor: pointer;
+    background: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+    padding: 20px 10px;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.app-text {
+    margin: 15px 0;
+}
+.app-down {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.app-down img {
+    height: 40px;
+}
+
+.app-down img:first-child {
+    height: 40px;
+}
+
+@media(max-width: 760px) {
+    body {
+        background: #fff;
+    }
+    .insta-phone {
+        display: none;
+    }
+    .insta-continue {
+        width: 100%;
+    }
+}
